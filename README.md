@@ -14,6 +14,11 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## See Live Preview
+CodeSandbox: 
+- [link](https://uov6l8-3000.preview.csb.app/)
+- [Full Sandbox](https://codesandbox.io/p/github/nswagg/MultiSelect-TS/csb-uov6l8/draft/long-snow?file=%2Fcomponents%2FSelect.tsx)
+
 
 ## Learn More
 
