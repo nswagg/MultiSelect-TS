@@ -1,8 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app `](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and created with [Next.js Typescript](https://nextjs.org/docs/basic-features/typescript).
 
 ## Getting Started
 
-First, run the development server:
+Clone the project to your local dev device.
+
+To view the project, install dependencies `npm i` or `yarn add` before starting. See scripts in `package.json`.
 
 ```bash
 npm run dev
@@ -12,13 +14,12 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
+
+For more information about React-Select, visit the official [React-Select documentation](https://react-select.com/home) or [GitHub](https://github.com/JedWatson/react-select)
+
+- NOTE: when using SSG or SSR with react-select, [some issues](https://github.com/JedWatson/react-select/issues/2629) may occcur. Please be aware. 
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -27,8 +28,6 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Misc
+- [About the unknown type](https://mariusschulz.com/blog/the-unknown-type-in-typescript)
+- [Other multiselect examples](https://medium.com/@compmonk/react-multi-select-with-check-boxes-and-select-all-option-bd16941538f3)
