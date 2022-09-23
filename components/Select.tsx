@@ -11,7 +11,7 @@ interface Props {
   selected: Option[],
   setSelected: Dispatch<SetStateAction<any>>,
   title: string,
-  hide?: boolean
+  hide?: boolean,
 }
 
 export type Option = {
@@ -35,13 +35,13 @@ export default function MultiSelect(props: Props) {
   valueRef.current = props.selected;
   
   const selectAllOption = {value: "*", label:"Select All"};
-  const isSelectAllSelected = () => valueRef.current.length === props.options.length;
+  const isSelectAllSelected = () => (valueRef.current.length === props.options.length) && props.options.length > 1;
   const isOptionSelected = (option: Option, selectValue: Options<Option>) => 
     valueRef.current.some(({value}) => value === option.value) ||
     isSelectAllSelected();
 
   //const getOptions = () => isSelectAllSelected() ? [] : [selectAllOption, ...props.options];
-  const getOptions = () => [selectAllOption, ...props.options];
+  const getOptions = () => props.options.length > 1 ? [selectAllOption, ...props.options] : [...props.options];
   const getValue = () => isSelectAllSelected() ? [selectAllOption] : props.selected;
 
   const handleSelect = (newValue: unknown, actionMeta: ActionMeta<unknown>) => {
